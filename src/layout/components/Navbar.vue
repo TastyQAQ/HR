@@ -18,7 +18,7 @@
               首頁
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/PanJiaChen/vue-admin-template/">
+          <a target="_blank" href="https://github.com/TastyQAQ/HR.git">
             <el-dropdown-item>項目地址</el-dropdown-item>
           </a>
           <a target="_blank" @click.prevent="passwordDialog = true">

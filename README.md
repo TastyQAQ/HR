@@ -1,3 +1,11 @@
+此項目為Vue2版本, 基於Vue CLI所搭建, 使用element-ui、axios等工具
+
+此項目獲取數據接口為中國「黑馬程序員」機構所創建, 因此會有許多簡體字, 登入(已有設置默認手機及密碼)及註冊(添加員工)所需手機號碼也參照中國手機號碼格式
+
+考勤、保險、薪資、審批頁面尚未完成
+
+模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 以下為作者的模板介紹 
+
 # vue-admin-template
 
 English | [简体中文](./README-zh.md)
