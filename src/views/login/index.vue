@@ -6,10 +6,10 @@
       <el-card class="login-card" shadow="never">
         <el-form ref="form" :model="ruleForm" :rules="rules">
           <el-form-item prop="mobile">
-            <el-input v-model="ruleForm.mobile" placeholder="請輸入手機號碼" />
+            <el-input v-model="ruleForm.mobile" placeholder="請輸入手機號碼(13800000002)" />
           </el-form-item>
           <el-form-item prop="password">
-            <el-input v-model="ruleForm.password" placeholder="請輸入密碼" type="password" />
+            <el-input v-model="ruleForm.password" placeholder="請輸入密碼(hm#qd@23!)" type="password" />
           </el-form-item>
           <el-form-item prop="isAgree">
             <el-checkbox v-model="ruleForm.isAgree">用戶平台使用協議</el-checkbox>
