@@ -1,11 +1,57 @@
-此項目為Vue2版本, 基於Vue CLI所搭建, 使用element-ui、axios等工具
-
 此項目獲取數據接口為中國「黑馬程序員」機構所創建, 因此會有許多簡體字, 登入(已有設置默認手機及密碼)及註冊(添加員工)所需手機號碼也參照中國手機號碼格式
 
 考勤、保險、薪資、審批頁面尚未完成
 
-模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 以下為作者的模板介紹 
+模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 下面有作者模板的詳細介紹 
 
+# 人力資源管理系統
+<img src="https://img.onl/xQtoQ0">
+
+###### 此項目為人力資源管理系統, 模擬管理員對公司各部門、員工、職務等等相關操作
+
+## 主要功能
+
+**添加**
+<img src="https://img.onl/4pWWGr">
+
+**編輯**
+<img src="https://img.onl/9INCQa">
+
+**刪除**
+<img src="https://img.onl/9WN1Og">
+
+## 其他
+
+- [x] 登入
+- [x] 登出
+- [x] 修改密碼...
+
+## 安裝
+
+```bash
+# 取得專案
+git clone https://github.com/TastyQAQ/HR
+
+# 進入專案
+cd Vue2_HR
+
+# 安裝套件
+npm install
+
+# 運行專案
+npm run dev
+```
+會自動於瀏覽器開啟http://localhost:9528
+
+# 主要工具
+
+* Vue v2.7.0
+* Vue Router v3.0.6
+* Vuex v3.1.0
+* element-ui v2.13.2
+* axios v0.18.1
+
+-------------------------以下為模板代碼作者的模板介紹------------------------------
 # vue-admin-template
 
 English | [简体中文](./README-zh.md)
