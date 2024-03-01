@@ -2,6 +2,8 @@
 
 考勤、保險、薪資、審批頁面尚未完成
 
+線上演示地址(黑馬程序員架設): https://heimahr.itheima.net
+
 模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 下面有作者模板的詳細介紹 
 
 # 人力資源管理系統
