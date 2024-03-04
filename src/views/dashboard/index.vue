@@ -81,25 +81,25 @@
         <div class="panel">
           <div class="panel-title">快捷入口</div>
           <div class="quick-entry">
-            <div class="entry-item">
+            <div class="entry-item" @click="$router.push('/approval')">
               <div class="entry-icon approval" />
               <span>假期審批</span>
             </div>
-            <div class="entry-item">
+            <div class="entry-item" @click="$router.push('/social')">
               <div class="entry-icon social" />
               <span>社保管理</span>
             </div>
-            <div class="entry-item">
+            <div class="entry-item" @click="$router.push('/role')">
               <div class="entry-icon role" />
               <span>角色管理</span>
             </div>
-            <div class="entry-item">
+            <div class="entry-item" @click="$router.push('/salary')">
               <div class="entry-icon salary" />
               <span>薪資設置</span>
             </div>
-            <div class="entry-item">
+            <div class="entry-item" @click="$router.push('/permission')">
               <div class="entry-icon bpm" />
-              <span>流程設置</span>
+              <span>添加權限</span>
             </div>
           </div>
         </div>
