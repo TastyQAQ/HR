@@ -118,7 +118,7 @@ export function param2Obj(url) {
 // 封裝部門渲染樹形結構遞歸方法
 export function departmentRender(list, id) {
   const arr = []
-  list.some(ele => {
+  list.forEach(ele => {
     if (ele.pid === id) { // 找出最高級節點
       const children = departmentRender(list, ele.id) // 遞歸找出其子節點
       ele.children = children // 配合element-ui的tree結構, 將子節點賦值到父級中的children

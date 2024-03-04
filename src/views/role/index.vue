@@ -132,7 +132,7 @@ export default {
       if (row.editRow.name && row.editRow.description) {
         await editRole({ ...row.editRow, id: row.id })
         this.$message.success('編輯角色成功')
-        // row.name = row.editRow.name // eslint的一校驗 誤判
+        // row.name = row.editRow.name // eslint的一校驗 誤判(await後不能再對row進行操作)
         // Object.assign(target, source)
         Object.assign(row, { ...row.editRow, isEdit: false // 退出編輯模式
         }) // 規避eslint的誤判

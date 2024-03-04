@@ -78,7 +78,7 @@ export default {
       queryParams: {
         page: 1,
         pagesize: 10,
-        keyword: '',
+        keyword: '', // 搜索框查詢員工用
         departmentId: null // 部門節點
       },
       EmployeeList: [], // 員工列表
