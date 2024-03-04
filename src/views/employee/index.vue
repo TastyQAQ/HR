@@ -7,7 +7,7 @@
       </div>
       <div class="right">
         <el-row type="flex" justify="end" class="opeate-tools">
-          <el-button v-permission="'add-employee'" type="primary" size="mini" @click="$router.push('/employee/detail')">添加員工</el-button>
+          <el-button type="primary" size="mini" @click="$router.push('/employee/detail')">添加員工</el-button>
           <el-button size="mini" @click="importDialog = true">excel導入</el-button>
           <el-button size="mini" @click="exportEmployee">excel導出</el-button>
         </el-row>
