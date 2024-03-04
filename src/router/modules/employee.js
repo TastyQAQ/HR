@@ -1,11 +1,11 @@
 import layout from '@/layout'
 export default {
   path: '/employee',
-  name: 'employee',
+  // name: 'employee',
   component: layout,
   children: [{
     path: '',
-    name: 'Employee',
+    name: 'employee',
     component: () => import('@/views/employee'),
     meta: { title: '員工', icon: 'people' }
   },

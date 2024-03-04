@@ -21,8 +21,8 @@ router.beforeEach(async(to, from, next) => {
         const { roles } = await store.dispatch('user/getUserInfo') // 從用戶資料解構出用戶權限點相關資訊
         // 從動態路由數組內挑選出用戶路由權限點
         const filterRoutes = asyncRoutes.filter(item => {
-          // roles.menus(用戶路由權限點), item.name(各路由的name屬性, 值需和用戶路由權限點匹配)
-          return roles.menus.includes(item.name)
+          // roles.menus(用戶路由權限點), item.children[0].name(各路由的name屬性, 由於實際訪問的是子路由, 故使用children[0]獲取name屬性, 值需和用戶路由權限點匹配)
+          return roles.menus.includes(item.children[0].name)
         })
         // 倉庫設置權限路由名稱(渲染左側導航菜單用, 故不需要404錯誤頁面)
         store.commit('user/setRoutes', filterRoutes)
