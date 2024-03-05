@@ -18,10 +18,10 @@
             <el-button type="primary" style="width: 350px" @click="login">登入</el-button>
           </el-form-item>
         </el-form>
-        <div class="change-login">
+        <!-- <div class="change-login"> // 無功能
           <el-button style="width: 170px">手機登入</el-button>
           <el-button style="width: 170px">QRcode登入</el-button>
-        </div>
+        </div> -->
       </el-card>
     </div>
   </div>
