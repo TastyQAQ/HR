@@ -1,34 +1,51 @@
-此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
+以e此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
+
+主要使用工具包含element-ui組件庫及axios請求工具等等
 
 所有獲取數據之接口為中國「黑馬程序員」機構所創建, 因此會有許多簡體字
 
 考勤、保險、薪資、審批頁面尚未完成
 
-模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 下面有作者模板的詳細介紹 
+模板代碼作者為https://github.com/PanJiaChen/vue-admin-template.git , 下面會有作者模板的詳細介紹 
 
 # 人力資源管理系統
-<img src="https://img.onl/xQtoQ0">
 
 ###### 此項目為人力資源管理系統, 模擬管理員對公司各部門、員工、職務等等相關操作
+<img src="https://img.onl/xQtoQ0">
 
 ## 登入頁
 
-##### 已設置默認登入帳號密碼, 若想
+##### 已設置默認登入帳號密碼, 登入時會依據用戶職務權限渲染可訪問的頁面
+<img src="https://img.onl/nlDycD">
 
-**添加**
-<img src="https://img.onl/4pWWGr">
+## 首頁
 
-**編輯**
-<img src="https://img.onl/9INCQa">
+##### 公司部分數據顯示, 包含人數、員工、近期通知等等, 配合ECharts圖表及vue-count-to數字滾動插件美化數據顯示
+<img src="https://img.onl/xQtoQ0">
 
-**刪除**
-<img src="https://img.onl/9WN1Og">
+## 組織
 
-## 其他
+##### 所有部門展示及相關操作, 添加子部門、編輯部門、刪除部門
+<img src="https://img.onl/7azSb8">
+<img src="https://img.onl/4pWWGr" height="220px">
+<img src="https://img.onl/DKfeyF" height="220px">
+<img src="https://img.onl/VYpiO8" height="220px">
 
-- [x] 登入
-- [x] 登出
-- [x] 修改密碼...
+## 職務
+
+##### 所有職務描述及相關操作, 添加職務、分配職務權限(可訪問的頁面或部分操作)、編輯職務、刪除職務
+<img src="https://img.onl/w6u9b">
+
+## 員工
+
+##### 所有員工相關資料及操作, 可依照各部門顯示該部門員工, 亦可以直接搜尋
+##### 查看按鈕可修各員工資料、角色按鈕可設定該員工的職務, 另有excel導出及導入功能, 可依照固定格式上傳員工資料或使用file-saver插件將員工資料下載成excel檔案
+<img src="https://img.onl/za5L2">
+
+## 權限
+
+##### 所有權限展示及相關操作, 添加權限(及子權限)、編輯權限、刪除權限
+<img src="https://img.onl/xllvVp">
 
 ## 安裝
 
@@ -47,7 +64,7 @@ npm run dev
 ```
 會自動於瀏覽器開啟http://localhost:9528
 
-線上演示地址(黑馬程序員架設): https://heimahr.itheima.net
+另有黑馬程序員所架設之線上演示地址: https://heimahr.itheima.net
 
 # 主要工具
 
