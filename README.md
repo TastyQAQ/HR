@@ -1,4 +1,4 @@
-以e此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
+此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
 
 主要使用工具包含element-ui組件庫及axios請求工具等等
 
