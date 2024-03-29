@@ -64,8 +64,6 @@ npm run dev
 ```
 會自動於瀏覽器開啟http://localhost:9528
 
-另有黑馬程序員所架設之線上演示地址: https://heimahr.itheima.net
-
 # 主要工具
 
 * Vue v2.7.0
