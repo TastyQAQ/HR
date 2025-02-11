@@ -1,4 +1,4 @@
-以e此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
+此項目使用VScode編輯器撰寫, 以Vue2版本並基於Vue CLI架設
 
 主要使用工具包含element-ui組件庫及axios請求工具等等
 
@@ -63,8 +63,6 @@ npm install
 npm run dev
 ```
 會自動於瀏覽器開啟http://localhost:9528
-
-另有黑馬程序員所架設之線上演示地址: https://heimahr.itheima.net
 
 # 主要工具
 
