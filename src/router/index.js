@@ -72,10 +72,10 @@ export const asyncRoutes = [
   roleRouter,
   employeeRouter,
   permissionRouter,
-  salaryRouter,
-  socialRouter,
   attendanceRouter,
-  approvalRouter
+  approvalRouter,
+  salaryRouter,
+  socialRouter
 ]
 
 const createRouter = () => new Router({
