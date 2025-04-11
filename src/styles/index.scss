@@ -69,3 +69,12 @@ div:focus {
 .app-container {
   background-color: #fff;
 }
+.el-step__line {
+  border-color: #dcdfe6;
+}
+.el-step__title.is-success {
+  color: #303133;
+}
+.el-step__description.is-success {
+  color: #606266;
+}

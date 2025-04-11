@@ -30,7 +30,7 @@
           <el-table-column label="審核狀態" prop="processState" :formatter="procesState" width="210" sortable />
           <el-table-column label="操作" width="90">
             <template slot-scope="scope">
-              <el-button type="text" size="mini" @click="check(scope.row)">查看</el-button>
+              <el-button type="text" size="mini" @click="check(scope)">查看</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -68,6 +68,16 @@ export default {
     },
     procesState(row) {
       return this.processState[row.processState]
+    },
+    check(scope) {
+      if (scope.row.processKey === 'process_leave') {
+        this.$router.push(`/approval/process_leave/detail/${scope.row.processId}`)
+      } else if (scope.row.processKey === 'process_overtime') {
+        this.$router.push(`/approval/process_overtime/detail/${scope.row.processId}`)
+      } else {
+        this.$router.push(`/approval/process_dimission/detail/${scope.row.processId}`)
+      }
+      // this.$router.push(`/approval/${scope.row.processKey}/detail/${scope.row.processId}`)
     }
   }
 }
