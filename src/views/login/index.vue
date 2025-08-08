@@ -9,7 +9,7 @@
             <el-input v-model="ruleForm.mobile" placeholder="請輸入手機號碼(13800000002)" />
           </el-form-item>
           <el-form-item prop="password">
-            <el-input v-model="ruleForm.password" placeholder="請輸入密碼(hm#qd@23!)" type="password" />
+            <el-input v-model="ruleForm.password" placeholder="請輸入密碼(itHeiMa@+當日年月日, 例:itHeiMa@20250715, 若仍無法進入則換成昨日日期)" type="password" />
           </el-form-item>
           <el-form-item prop="isAgree">
             <el-checkbox v-model="ruleForm.isAgree">用戶平台使用協議</el-checkbox>
@@ -35,7 +35,7 @@ export default {
     return {
       ruleForm: {
         mobile: '13800000002',
-        password: 'hm#qd@23!',
+        password: this.getPassword(),
         isAgree: process.env.NODE_ENV === 'development'
       },
       rules: {
@@ -55,6 +55,9 @@ export default {
       }
     }
   },
+  // created() {
+  //   this.getPassword()
+  // },
   methods: {
     login() {
       this.$refs.form.validate(async(valid) => {
@@ -63,6 +66,10 @@ export default {
           this.$router.push('/')
         }
       })
+    },
+    getPassword() {
+      const date = new Date()
+      return 'itHeiMa@' + date.toLocaleDateString().split('/').map(ele => { return ele.length < 2 ? '0' + ele : ele }).join('')
     }
 
   }

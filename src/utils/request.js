@@ -21,7 +21,7 @@ service.interceptors.request.use((config) => {
 service.interceptors.response.use((response) => {
   // axios默認包裹了data
   // 判斷是不是Blob
-  if (response.data instanceof Blob) {
+  if (response.data instanceof Blob || typeof response.data === 'string') {
     return response.data// 返回了Blob對象
   }
   const { data, message, success } = response.data // 解構響應數據(默認json格式)
